@@ -2,59 +2,66 @@
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-purple-900 via-blue-900 to-black overflow-hidden">
-      <div className="relative min-h-screen flex flex-col items-center justify-center p-8">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="star" style={{ left: '5%', top: '5%', animationDelay: '0s', animationDuration: '1s' }}></div>
-          <div className="star star-large" style={{ left: '15%', top: '12%', animationDelay: '0.3s', animationDuration: '1.5s' }}></div>
-          <div className="star" style={{ left: '25%', top: '18%', animationDelay: '0.6s', animationDuration: '2s' }}></div>
-          <div className="star star-large" style={{ left: '35%', top: '8%', animationDelay: '0.9s', animationDuration: '1.2s' }}></div>
-          <div className="star" style={{ left: '45%', top: '22%', animationDelay: '1.2s', animationDuration: '1.8s' }}></div>
-          <div className="star star-large" style={{ left: '55%', top: '6%', animationDelay: '1.5s', animationDuration: '1.4s' }}></div>
-          <div className="star" style={{ left: '65%', top: '14%', animationDelay: '1.8s', animationDuration: '2.2s' }}></div>
-          <div className="star star-large" style={{ left: '75%', top: '10%', animationDelay: '2.1s', animationDuration: '1.6s' }}></div>
-          <div className="star" style={{ left: '85%', top: '20%', animationDelay: '2.4s', animationDuration: '1.3s' }}></div>
-          <div className="star star-large" style={{ left: '95%', top: '7%', animationDelay: '2.7s', animationDuration: '1.9s' }}></div>
-          <div className="star" style={{ left: '8%', top: '30%', animationDelay: '0.1s', animationDuration: '2.5s' }}></div>
-          <div className="star star-large" style={{ left: '18%', top: '35%', animationDelay: '0.4s', animationDuration: '1.1s' }}></div>
-          <div className="star" style={{ left: '28%', top: '28%', animationDelay: '0.7s', animationDuration: '2.3s' }}></div>
-          <div className="star" style={{ left: '38%', top: '32%', animationDelay: '1s', animationDuration: '1.7s' }}></div>
-          <div className="star star-large" style={{ left: '48%', top: '36%', animationDelay: '1.3s', animationDuration: '2.1s' }}></div>
-          <div className="star" style={{ left: '58%', top: '29%', animationDelay: '1.6s', animationDuration: '1.5s' }}></div>
-          <div className="star star-large" style={{ left: '68%', top: '33%', animationDelay: '1.9s', animationDuration: '2.4s' }}></div>
-          <div className="star" style={{ left: '78%', top: '31%', animationDelay: '2.2s', animationDuration: '1.2s' }}></div>
-          <div className="star" style={{ left: '88%', top: '34%', animationDelay: '2.5s', animationDuration: '1.8s' }}></div>
-          <div className="star star-large" style={{ left: '92%', top: '38%', animationDelay: '2.8s', animationDuration: '2s' }}></div>
-          <div className="star" style={{ left: '10%', top: '50%', animationDelay: '0.2s', animationDuration: '1.6s' }}></div>
-          <div className="star star-large" style={{ left: '20%', top: '55%', animationDelay: '0.5s', animationDuration: '2.2s' }}></div>
-          <div className="star" style={{ left: '30%', top: '48%', animationDelay: '0.8s', animationDuration: '1.4s' }}></div>
-          <div className="star star-large" style={{ left: '40%', top: '52%', animationDelay: '1.1s', animationDuration: '1.9s' }}></div>
-          <div className="star" style={{ left: '50%', top: '56%', animationDelay: '1.4s', animationDuration: '1.3s' }}></div>
-          <div className="star star-large" style={{ left: '60%', top: '49%', animationDelay: '1.7s', animationDuration: '2.5s' }}></div>
-          <div className="star" style={{ left: '70%', top: '53%', animationDelay: '2s', animationDuration: '1.7s' }}></div>
-          <div className="star star-large" style={{ left: '80%', top: '57%', animationDelay: '2.3s', animationDuration: '1.1s' }}></div>
-          <div className="star" style={{ left: '90%', top: '51%', animationDelay: '2.6s', animationDuration: '2.3s' }}></div>
-          <div className="star star-large" style={{ left: '5%', top: '70%', animationDelay: '0.15s', animationDuration: '2s' }}></div>
-          <div className="star" style={{ left: '15%', top: '75%', animationDelay: '0.45s', animationDuration: '1.2s' }}></div>
-          <div className="star star-large" style={{ left: '25%', top: '68%', animationDelay: '0.75s', animationDuration: '2.4s' }}></div>
-          <div className="star" style={{ left: '35%', top: '72%', animationDelay: '1.05s', animationDuration: '1.6s' }}></div>
-          <div className="star star-large" style={{ left: '45%', top: '76%', animationDelay: '1.35s', animationDuration: '1.3s' }}></div>
-          <div className="star" style={{ left: '55%', top: '69%', animationDelay: '1.65s', animationDuration: '2.1s' }}></div>
-          <div className="star star-large" style={{ left: '65%', top: '73%', animationDelay: '1.95s', animationDuration: '1.5s' }}></div>
-          <div className="star" style={{ left: '75%', top: '77%', animationDelay: '2.25s', animationDuration: '1.8s' }}></div>
-          <div className="star star-large" style={{ left: '85%', top: '71%', animationDelay: '2.55s', animationDuration: '2.2s' }}></div>
-          <div className="star" style={{ left: '95%', top: '74%', animationDelay: '2.85s', animationDuration: '1.4s' }}></div>
-          <div className="star" style={{ left: '12%', top: '85%', animationDelay: '0.25s', animationDuration: '1.9s' }}></div>
-          <div className="star star-large" style={{ left: '22%', top: '88%', animationDelay: '0.55s', animationDuration: '2.6s' }}></div>
-          <div className="star" style={{ left: '32%', top: '82%', animationDelay: '0.85s', animationDuration: '1.1s' }}></div>
-          <div className="star star-large" style={{ left: '42%', top: '86%', animationDelay: '1.15s', animationDuration: '1.7s' }}></div>
-          <div className="star" style={{ left: '52%', top: '90%', animationDelay: '1.45s', animationDuration: '2.2s' }}></div>
-          <div className="star star-large" style={{ left: '62%', top: '83%', animationDelay: '1.75s', animationDuration: '1.4s' }}></div>
-          <div className="star" style={{ left: '72%', top: '87%', animationDelay: '2.05s', animationDuration: '1.8s' }}></div>
-          <div className="star star-large" style={{ left: '82%', top: '91%', animationDelay: '2.35s', animationDuration: '2.4s' }}></div>
-          <div className="star" style={{ left: '92%', top: '84%', animationDelay: '2.65s', animationDuration: '1.2s' }}></div>
-        </div>
+    <div className="min-h-screen bg-gradient-to-b from-purple-900 via-blue-900 to-black overflow-hidden relative">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="star" style={{ left: '5%', top: '5%', animationDelay: '0s', animationDuration: '1s' }}></div>
+        <div className="star star-large" style={{ left: '15%', top: '12%', animationDelay: '0.3s', animationDuration: '1.5s' }}></div>
+        <div className="star" style={{ left: '25%', top: '18%', animationDelay: '0.6s', animationDuration: '2s' }}></div>
+        <div className="star star-large" style={{ left: '35%', top: '8%', animationDelay: '0.9s', animationDuration: '1.2s' }}></div>
+        <div className="star" style={{ left: '45%', top: '22%', animationDelay: '1.2s', animationDuration: '1.8s' }}></div>
+        <div className="star star-large" style={{ left: '55%', top: '6%', animationDelay: '1.5s', animationDuration: '1.4s' }}></div>
+        <div className="star" style={{ left: '65%', top: '14%', animationDelay: '1.8s', animationDuration: '2.2s' }}></div>
+        <div className="star star-large" style={{ left: '75%', top: '10%', animationDelay: '2.1s', animationDuration: '1.6s' }}></div>
+        <div className="star" style={{ left: '85%', top: '20%', animationDelay: '2.4s', animationDuration: '1.3s' }}></div>
+        <div className="star star-large" style={{ left: '95%', top: '7%', animationDelay: '2.7s', animationDuration: '1.9s' }}></div>
+        <div className="star" style={{ left: '8%', top: '30%', animationDelay: '0.1s', animationDuration: '2.5s' }}></div>
+        <div className="star star-large" style={{ left: '18%', top: '35%', animationDelay: '0.4s', animationDuration: '1.1s' }}></div>
+        <div className="star" style={{ left: '28%', top: '28%', animationDelay: '0.7s', animationDuration: '2.3s' }}></div>
+        <div className="star" style={{ left: '38%', top: '32%', animationDelay: '1s', animationDuration: '1.7s' }}></div>
+        <div className="star star-large" style={{ left: '48%', top: '36%', animationDelay: '1.3s', animationDuration: '2.1s' }}></div>
+        <div className="star" style={{ left: '58%', top: '29%', animationDelay: '1.6s', animationDuration: '1.5s' }}></div>
+        <div className="star star-large" style={{ left: '68%', top: '33%', animationDelay: '1.9s', animationDuration: '2.4s' }}></div>
+        <div className="star" style={{ left: '78%', top: '31%', animationDelay: '2.2s', animationDuration: '1.2s' }}></div>
+        <div className="star" style={{ left: '88%', top: '34%', animationDelay: '2.5s', animationDuration: '1.8s' }}></div>
+        <div className="star star-large" style={{ left: '92%', top: '38%', animationDelay: '2.8s', animationDuration: '2s' }}></div>
+        <div className="star" style={{ left: '10%', top: '50%', animationDelay: '0.2s', animationDuration: '1.6s' }}></div>
+        <div className="star star-large" style={{ left: '20%', top: '55%', animationDelay: '0.5s', animationDuration: '2.2s' }}></div>
+        <div className="star" style={{ left: '30%', top: '48%', animationDelay: '0.8s', animationDuration: '1.4s' }}></div>
+        <div className="star star-large" style={{ left: '40%', top: '52%', animationDelay: '1.1s', animationDuration: '1.9s' }}></div>
+        <div className="star" style={{ left: '50%', top: '56%', animationDelay: '1.4s', animationDuration: '1.3s' }}></div>
+        <div className="star star-large" style={{ left: '60%', top: '49%', animationDelay: '1.7s', animationDuration: '2.5s' }}></div>
+        <div className="star" style={{ left: '70%', top: '53%', animationDelay: '2s', animationDuration: '1.7s' }}></div>
+        <div className="star star-large" style={{ left: '80%', top: '57%', animationDelay: '2.3s', animationDuration: '1.1s' }}></div>
+        <div className="star" style={{ left: '90%', top: '51%', animationDelay: '2.6s', animationDuration: '2.3s' }}></div>
+        <div className="star star-large" style={{ left: '5%', top: '70%', animationDelay: '0.15s', animationDuration: '2s' }}></div>
+        <div className="star" style={{ left: '15%', top: '75%', animationDelay: '0.45s', animationDuration: '1.2s' }}></div>
+        <div className="star star-large" style={{ left: '25%', top: '68%', animationDelay: '0.75s', animationDuration: '2.4s' }}></div>
+        <div className="star" style={{ left: '35%', top: '72%', animationDelay: '1.05s', animationDuration: '1.6s' }}></div>
+        <div className="star star-large" style={{ left: '45%', top: '76%', animationDelay: '1.35s', animationDuration: '1.3s' }}></div>
+        <div className="star" style={{ left: '55%', top: '69%', animationDelay: '1.65s', animationDuration: '2.1s' }}></div>
+        <div className="star star-large" style={{ left: '65%', top: '73%', animationDelay: '1.95s', animationDuration: '1.5s' }}></div>
+        <div className="star" style={{ left: '75%', top: '77%', animationDelay: '2.25s', animationDuration: '1.8s' }}></div>
+        <div className="star star-large" style={{ left: '85%', top: '71%', animationDelay: '2.55s', animationDuration: '2.2s' }}></div>
+        <div className="star" style={{ left: '95%', top: '74%', animationDelay: '2.85s', animationDuration: '1.4s' }}></div>
+        <div className="star" style={{ left: '12%', top: '85%', animationDelay: '0.25s', animationDuration: '1.9s' }}></div>
+        <div className="star star-large" style={{ left: '22%', top: '88%', animationDelay: '0.55s', animationDuration: '2.6s' }}></div>
+        <div className="star" style={{ left: '32%', top: '82%', animationDelay: '0.85s', animationDuration: '1.1s' }}></div>
+        <div className="star star-large" style={{ left: '42%', top: '86%', animationDelay: '1.15s', animationDuration: '1.7s' }}></div>
+        <div className="star" style={{ left: '52%', top: '90%', animationDelay: '1.45s', animationDuration: '2.2s' }}></div>
+        <div className="star star-large" style={{ left: '62%', top: '83%', animationDelay: '1.75s', animationDuration: '1.4s' }}></div>
+        <div className="star" style={{ left: '72%', top: '87%', animationDelay: '2.05s', animationDuration: '1.8s' }}></div>
+        <div className="star star-large" style={{ left: '82%', top: '91%', animationDelay: '2.35s', animationDuration: '2.4s' }}></div>
+        <div className="star" style={{ left: '92%', top: '84%', animationDelay: '2.65s', animationDuration: '1.2s' }}></div>
+      </div>
 
+      <div className="spinning-overlay-1"></div>
+      <div className="spinning-overlay-2"></div>
+      <div className="spinning-overlay-3"></div>
+      <div className="spinning-overlay-4"></div>
+
+      <div className="flashing-bg"></div>
+
+      <div className="relative min-h-screen flex flex-col items-center justify-center p-8">
         <div className="relative z-10 text-center max-w-4xl">
           <div className="marquee-container mb-8 glitch-effect">
             <div className="marquee-text">
@@ -174,12 +181,124 @@ export default function Home() {
 
         body {
           font-family: 'Comic Neue', 'Comic Sans MS', cursive;
-          animation: bodyPulse 5s infinite;
+          animation: bodyPulse 3s infinite;
         }
 
         @keyframes bodyPulse {
-          0%, 100% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
+          0%, 100% { background-position: 0% 50%; filter: hue-rotate(0deg); }
+          50% { background-position: 100% 50%; filter: hue-rotate(180deg); }
+        }
+
+        .spinning-overlay-1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 800px;
+          height: 800px;
+          margin-top: -400px;
+          margin-left: -400px;
+          border: 10px solid;
+          border-color: #ff00ff;
+          border-radius: 50%;
+          animation: spinOverlay1 2s linear infinite;
+          opacity: 0.3;
+          pointer-events: none;
+          box-shadow: 0 0 50px #ff00ff, inset 0 0 50px #ff00ff;
+        }
+
+        @keyframes spinOverlay1 {
+          0% { transform: rotate(0deg); border-color: #ff00ff; }
+          25% { border-color: #00ffff; }
+          50% { transform: rotate(180deg); border-color: #ffff00; }
+          75% { border-color: #ff0000; }
+          100% { transform: rotate(360deg); border-color: #ff00ff; }
+        }
+
+        .spinning-overlay-2 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 600px;
+          height: 600px;
+          margin-top: -300px;
+          margin-left: -300px;
+          border: 8px solid;
+          border-color: #00ffff;
+          border-radius: 50%;
+          animation: spinOverlay2 1.5s linear infinite reverse;
+          opacity: 0.4;
+          pointer-events: none;
+          box-shadow: 0 0 40px #00ffff, inset 0 0 40px #00ffff;
+        }
+
+        @keyframes spinOverlay2 {
+          0% { transform: rotate(0deg) scale(1); border-color: #00ffff; }
+          33% { transform: rotate(-120deg) scale(1.1); border-color: #ff00ff; }
+          66% { transform: rotate(-240deg) scale(0.9); border-color: #ffff00; }
+          100% { transform: rotate(-360deg) scale(1); border-color: #00ffff; }
+        }
+
+        .spinning-overlay-3 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 400px;
+          height: 400px;
+          margin-top: -200px;
+          margin-left: -200px;
+          border: 15px solid;
+          border-color: #ffff00;
+          border-radius: 50%;
+          animation: spinOverlay3 1s linear infinite;
+          opacity: 0.5;
+          pointer-events: none;
+          box-shadow: 0 0 60px #ffff00, inset 0 0 60px #ffff00;
+        }
+
+        @keyframes spinOverlay3 {
+          0% { transform: rotate(0deg) rotateX(0deg) rotateY(0deg); border-color: #ffff00; }
+          25% { transform: rotate(90deg) rotateX(45deg) rotateY(45deg); border-color: #ff0000; }
+          50% { transform: rotate(180deg) rotateX(0deg) rotateY(0deg); border-color: #00ff00; }
+          75% { transform: rotate(270deg) rotateX(-45deg) rotateY(-45deg); border-color: #0000ff; }
+          100% { transform: rotate(360deg) rotateX(0deg) rotateY(0deg); border-color: #ffff00; }
+        }
+
+        .spinning-overlay-4 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 1000px;
+          height: 1000px;
+          margin-top: -500px;
+          margin-left: -500px;
+          border: 5px solid;
+          border-color: #ff0000;
+          border-radius: 50%;
+          animation: spinOverlay4 3s linear infinite reverse;
+          opacity: 0.2;
+          pointer-events: none;
+          box-shadow: 0 0 30px #ff0000, inset 0 0 30px #ff0000;
+        }
+
+        @keyframes spinOverlay4 {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(-360deg); }
+        }
+
+        .flashing-bg {
+          position: fixed;
+          inset: 0;
+          background: rgba(255, 0, 0, 0.1);
+          animation: flashBg 0.1s infinite;
+          pointer-events: none;
+          z-index: 1;
+        }
+
+        @keyframes flashBg {
+          0%, 100% { background: rgba(255, 0, 0, 0.05); }
+          25% { background: rgba(0, 255, 0, 0.05); }
+          50% { background: rgba(0, 0, 255, 0.05); }
+          75% { background: rgba(255, 255, 0, 0.05); }
         }
 
         .star {
@@ -208,7 +327,7 @@ export default function Home() {
           padding: 10px;
           border-radius: 10px;
           box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-          animation: rainbowBorder 3s linear infinite;
+          animation: rainbowBorder 2s linear infinite;
         }
 
         @keyframes rainbowBorder {
@@ -240,7 +359,7 @@ export default function Home() {
         }
 
         .neon-border-container {
-          animation: neonPulse 1s infinite;
+          animation: neonPulse 0.8s infinite;
           transform-style: preserve-3d;
         }
 
@@ -250,9 +369,9 @@ export default function Home() {
 
         @keyframes rotate3D {
           0% { transform: rotateX(0deg) rotateY(0deg); }
-          25% { transform: rotateX(5deg) rotateY(5deg); }
+          25% { transform: rotateX(10deg) rotateY(10deg); }
           50% { transform: rotateX(0deg) rotateY(0deg); }
-          75% { transform: rotateX(-5deg) rotateY(-5deg); }
+          75% { transform: rotateX(-10deg) rotateY(-10deg); }
           100% { transform: rotateX(0deg) rotateY(0deg); }
         }
 
@@ -268,7 +387,7 @@ export default function Home() {
         }
 
         .blinking-text {
-          animation: blink 0.3s infinite;
+          animation: blink 0.2s infinite;
         }
 
         @keyframes blink {
@@ -278,7 +397,7 @@ export default function Home() {
         }
 
         .rainbow-text {
-          animation: rainbow 0.5s linear infinite;
+          animation: rainbow 0.3s linear infinite;
           -webkit-background-clip: text;
           background-clip: text;
         }
@@ -294,7 +413,7 @@ export default function Home() {
         }
 
         .spin-text {
-          animation: spinText 2s linear infinite;
+          animation: spinText 1s linear infinite;
         }
 
         @keyframes spinText {
@@ -307,7 +426,7 @@ export default function Home() {
 
         .rainbow-border {
           border: 6px solid;
-          animation: rainbowBorderRotate 1s linear infinite;
+          animation: rainbowBorderRotate 0.5s linear infinite;
           background: rgba(0, 0, 0, 0.8);
         }
 
@@ -322,7 +441,7 @@ export default function Home() {
         }
 
         .bounce-box {
-          animation: bounceBox 0.5s ease-in-out infinite;
+          animation: bounceBox 0.3s ease-in-out infinite;
         }
 
         @keyframes bounceBox {
@@ -333,13 +452,13 @@ export default function Home() {
         .glow-box {
           background: rgba(0, 0, 0, 0.9);
           border: 5px solid;
-          animation: glow 0.5s infinite;
+          animation: glow 0.3s infinite;
           padding: 15px;
           border-radius: 15px;
         }
 
         .mega-pulse {
-          animation: megaPulse 0.8s infinite;
+          animation: megaPulse 0.5s infinite;
         }
 
         @keyframes megaPulse {
@@ -361,7 +480,7 @@ export default function Home() {
         }
 
         .shake-hard {
-          animation: shakeHard 0.2s infinite;
+          animation: shakeHard 0.1s infinite;
         }
 
         @keyframes shakeHard {
@@ -371,7 +490,7 @@ export default function Home() {
         }
 
         .mega-shake {
-          animation: megaShake 0.1s infinite;
+          animation: megaShake 0.08s infinite;
         }
 
         @keyframes megaShake {
@@ -392,7 +511,7 @@ export default function Home() {
           );
           padding: 20px;
           border-radius: 10px;
-          animation: shake 0.2s infinite;
+          animation: shake 0.15s infinite;
           border: 5px solid #ff0000;
         }
 
@@ -409,10 +528,16 @@ export default function Home() {
           border-radius: 15px;
           box-shadow: 0 0 30px #00ff00, 0 0 60px #00ff00;
           font-family: 'Press Start 2P', monospace;
+          animation: counterFlash 0.2s infinite;
+        }
+
+        @keyframes counterFlash {
+          0%, 100% { box-shadow: 0 0 30px #00ff00, 0 0 60px #00ff00; border-color: #00ff00; }
+          50% { box-shadow: 0 0 50px #ff00ff, 0 0 100px #ff00ff; border-color: #ff00ff; }
         }
 
         .glow-crazy {
-          animation: glowCrazy 0.3s infinite;
+          animation: glowCrazy 0.2s infinite;
         }
 
         @keyframes glowCrazy {
@@ -427,7 +552,7 @@ export default function Home() {
         }
 
         .number-animate {
-          animation: numberDance 0.5s infinite;
+          animation: numberDance 0.3s infinite;
         }
 
         @keyframes numberDance {
@@ -440,7 +565,7 @@ export default function Home() {
           padding: 20px;
           border-radius: 15px;
           border: 3px solid #ff00ff;
-          animation: emailPulse 0.5s infinite;
+          animation: emailPulse 0.3s infinite;
         }
 
         @keyframes emailPulse {
@@ -455,14 +580,14 @@ export default function Home() {
         }
 
         .mega-spin {
-          animation: megaSpin 1s linear infinite;
+          animation: megaSpin 0.8s linear infinite;
         }
 
         @keyframes megaSpin {
           0% { transform: rotate(0deg) scale(1); }
-          25% { transform: rotate(5deg) scale(1.1); }
+          25% { transform: rotate(10deg) scale(1.1); }
           50% { transform: rotate(0deg) scale(1); }
-          75% { transform: rotate(-5deg) scale(1.1); }
+          75% { transform: rotate(-10deg) scale(1.1); }
           100% { transform: rotate(0deg) scale(1); }
         }
 
@@ -471,7 +596,7 @@ export default function Home() {
           padding: 15px;
           border-radius: 10px;
           margin-top: 20px;
-          animation: footerGlow 1s infinite;
+          animation: footerGlow 0.5s infinite;
         }
 
         @keyframes footerGlow {
@@ -498,7 +623,7 @@ export default function Home() {
         }
 
         .glitch-effect {
-          animation: glitch 0.3s infinite;
+          animation: glitch 0.2s infinite;
         }
 
         @keyframes glitch {
@@ -510,7 +635,7 @@ export default function Home() {
         }
 
         .disco-text {
-          animation: disco 0.5s infinite;
+          animation: disco 0.3s infinite;
         }
 
         @keyframes disco {
@@ -521,7 +646,7 @@ export default function Home() {
         }
 
         .fire-text {
-          animation: fire 0.2s infinite;
+          animation: fire 0.15s infinite;
         }
 
         @keyframes fire {
@@ -536,7 +661,7 @@ export default function Home() {
         }
 
         .glitchy-text {
-          animation: glitchy 0.15s infinite;
+          animation: glitchy 0.1s infinite;
         }
 
         @keyframes glitchy {
