@@ -1,6 +1,38 @@
 'use client';
 
+import { useState, useEffect, useCallback } from 'react';
+
+interface SpawnedTextBox {
+  id: number;
+  x: number;
+  y: number;
+  rotation: number;
+}
+
 export default function Home() {
+  const [spawnedTextBoxes, setSpawnedTextBoxes] = useState<SpawnedTextBox[]>([]);
+  const [nextId, setNextId] = useState(0);
+
+  const spawnBox = useCallback(() => {
+    const newBox: SpawnedTextBox = {
+      id: nextId,
+      x: Math.random() * 80 + 10,
+      y: Math.random() * 80 + 10,
+      rotation: Math.random() * 360,
+    };
+    setNextId(prev => prev + 1);
+    setSpawnedTextBoxes(prev => [...prev, newBox]);
+
+    setTimeout(() => {
+      setSpawnedTextBoxes(prev => prev.filter(box => box.id !== newBox.id));
+    }, 2000);
+  }, [nextId]);
+
+  useEffect(() => {
+    const interval = setInterval(spawnBox, 100);
+    return () => clearInterval(interval);
+  }, [spawnBox]);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-900 via-blue-900 to-black overflow-hidden relative">
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -53,6 +85,23 @@ export default function Home() {
         <div className="star star-large" style={{ left: '82%', top: '91%', animationDelay: '2.35s', animationDuration: '2.4s' }}></div>
         <div className="star" style={{ left: '92%', top: '84%', animationDelay: '2.65s', animationDuration: '1.2s' }}></div>
       </div>
+
+      <div className="flickering-light flickering-light-1"></div>
+      <div className="flickering-light flickering-light-2"></div>
+      <div className="flickering-light flickering-light-3"></div>
+      <div className="flickering-light flickering-light-4"></div>
+      <div className="flickering-light flickering-light-5"></div>
+      <div className="flickering-light flickering-light-6"></div>
+      <div className="flickering-light flickering-light-7"></div>
+      <div className="flickering-light flickering-light-8"></div>
+
+      {spawnedTextBoxes.map(box => (
+        <div key={box.id} className="spawned-spinning-box" style={{ left: `${box.x}%`, top: `${box.y}%` }}>
+          <div className="spawned-box-inner">
+            SPINNING!
+          </div>
+        </div>
+      ))}
 
       <div className="spinning-overlay-1"></div>
       <div className="spinning-overlay-2"></div>
@@ -187,6 +236,123 @@ export default function Home() {
         @keyframes bodyPulse {
           0%, 100% { background-position: 0% 50%; filter: hue-rotate(0deg); }
           50% { background-position: 100% 50%; filter: hue-rotate(180deg); }
+        }
+
+        .flickering-light {
+          position: fixed;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          pointer-events: none;
+          z-index: 2;
+          animation: flickerLight 0.05s infinite;
+        }
+
+        .flickering-light-1 {
+          top: 10%;
+          left: 10%;
+          background: radial-gradient(circle, rgba(255, 0, 0, 0.8) 0%, transparent 70%);
+          box-shadow: 0 0 100px #ff0000;
+        }
+
+        .flickering-light-2 {
+          top: 10%;
+          right: 10%;
+          background: radial-gradient(circle, rgba(0, 255, 0, 0.8) 0%, transparent 70%);
+          box-shadow: 0 0 100px #00ff00;
+          animation-delay: 0.01s;
+        }
+
+        .flickering-light-3 {
+          bottom: 10%;
+          left: 10%;
+          background: radial-gradient(circle, rgba(0, 0, 255, 0.8) 0%, transparent 70%);
+          box-shadow: 0 0 100px #0000ff;
+          animation-delay: 0.02s;
+        }
+
+        .flickering-light-4 {
+          bottom: 10%;
+          right: 10%;
+          background: radial-gradient(circle, rgba(255, 255, 0, 0.8) 0%, transparent 70%);
+          box-shadow: 0 0 100px #ffff00;
+          animation-delay: 0.03s;
+        }
+
+        .flickering-light-5 {
+          top: 50%;
+          left: 5%;
+          background: radial-gradient(circle, rgba(255, 0, 255, 0.8) 0%, transparent 70%);
+          box-shadow: 0 0 100px #ff00ff;
+          animation-delay: 0.04s;
+        }
+
+        .flickering-light-6 {
+          top: 50%;
+          right: 5%;
+          background: radial-gradient(circle, rgba(0, 255, 255, 0.8) 0%, transparent 70%);
+          box-shadow: 0 0 100px #00ffff;
+          animation-delay: 0.05s;
+        }
+
+        .flickering-light-7 {
+          top: 5%;
+          left: 50%;
+          background: radial-gradient(circle, rgba(255, 100, 0, 0.8) 0%, transparent 70%);
+          box-shadow: 0 0 100px #ff6400;
+          animation-delay: 0.06s;
+        }
+
+        .flickering-light-8 {
+          bottom: 5%;
+          left: 50%;
+          background: radial-gradient(circle, rgba(100, 0, 255, 0.8) 0%, transparent 70%);
+          box-shadow: 0 0 100px #6400ff;
+          animation-delay: 0.07s;
+        }
+
+        @keyframes flickerLight {
+          0%, 100% { opacity: 1; transform: scale(1); }
+          50% { opacity: 0.3; transform: scale(1.2); }
+        }
+
+        .spawned-spinning-box {
+          position: fixed;
+          width: 100px;
+          height: 100px;
+          transform: translate(-50%, -50%);
+          pointer-events: none;
+          z-index: 50;
+          animation: spin1000rpm 0.06s linear infinite;
+        }
+
+        .spawned-box-inner {
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff00ff, #ffff00);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          color: white;
+          text-shadow: 2px 2px 4px black;
+          font-size: 14px;
+          box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+          animation: spawnedFadeOut 2s ease-out forwards;
+          border: 3px solid white;
+        }
+
+        @keyframes spin1000rpm {
+          0% { transform: rotate(0deg) scale(1); }
+          100% { transform: rotate(360deg) scale(1); }
+        }
+
+        @keyframes spawnedFadeOut {
+          0% { opacity: 1; transform: scale(0.5); }
+          20% { transform: scale(1.2); }
+          50% { opacity: 0.8; }
+          100% { opacity: 0; transform: scale(0.3); }
         }
 
         .spinning-overlay-1 {
